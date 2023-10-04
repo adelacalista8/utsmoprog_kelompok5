@@ -13,7 +13,7 @@ class OnBoardingPage extends StatelessWidget {
         width: media.width,
         height: media.height,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
@@ -22,14 +22,14 @@ class OnBoardingPage extends StatelessWidget {
               fit: BoxFit.fitWidth,
             ),
 
-            SizedBox(height: media.width * 0.1,),
+            SizedBox(height: media.width * 0.02),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Text(
                 pObj["title"].toString(),
                 style: TextStyle(
-                    color: TColor.gray,
+                    color: TColor.white,
                     fontSize: 25,
                     fontWeight: FontWeight.w600),
               ),
@@ -40,7 +40,7 @@ class OnBoardingPage extends StatelessWidget {
               child: Text(
               pObj["subtitle"].toString(),
                 style: TextStyle(
-                    color: TColor.white,
+                    color: TColor.gray,
                     fontSize: 15,
                     fontWeight: FontWeight.w600),
               ),
