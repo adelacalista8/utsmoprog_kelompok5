@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Poppins"
       ),
       // home: const StartedView(),
-    home : const MainTabView(),
+    home : const SignUpView(),
     );
   }
 }

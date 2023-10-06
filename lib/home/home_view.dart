@@ -1,4 +1,5 @@
 import 'package:UTS_Kelompok5/view/login/login_view.dart';
+import 'package:UTS_Kelompok5/view/workout_tracker/workout_tracker_view.dart';
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:UTS_Kelompok5/common_widget/round_blackbutton.dart';
 import 'package:UTS_Kelompok5/common_widget/round_button.dart';
@@ -622,7 +623,7 @@ class _HomeViewState extends State<HomeView> {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => const LoginView(),
+                                              builder: (context) => const WorkoutTrackerView(),
                                             ),
                                           );
                                         }),
