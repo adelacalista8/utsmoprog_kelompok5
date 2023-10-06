@@ -1,14 +1,15 @@
+import 'package:UTS_Kelompok5/meal_planner/meal_planner_view.dart';
 import 'package:UTS_Kelompok5/view/login/login_view.dart';
+import 'package:UTS_Kelompok5/view/profile/profile_view.dart';
 import 'package:UTS_Kelompok5/view/workout_tracker/workout_tracker_view.dart';
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:UTS_Kelompok5/common_widget/round_blackbutton.dart';
 import 'package:UTS_Kelompok5/common_widget/round_button.dart';
-import 'package:UTS_Kelompok5/common_widget/workout_row.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
-import '../../common/colo_extension.dart';
+import '../../../common/colo_extension.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -409,13 +410,13 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
                 SizedBox(
-                  height: media.width * 0.05,
+                  height: media.width * 0.10,
                 ),
                 Row(
                   children: [
                     Expanded(
                       child: Container(
-                        height: media.width * 0.95,
+                        height: media.width * 1.2,
                         padding: const EdgeInsets.symmetric(
                             vertical: 25, horizontal: 20),
                         decoration: BoxDecoration(
@@ -571,7 +572,8 @@ class _HomeViewState extends State<HomeView> {
                     ),
                     SizedBox(
                       width: media.width * 0.05,
-                    ),
+                      height: media.width * 0.4,
+                      ),
                     Expanded(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
@@ -579,7 +581,7 @@ class _HomeViewState extends State<HomeView> {
                           children: [
                             Container(
                               width: double.maxFinite,
-                              height: media.width * 0.45,
+                              height: media.width * 0.60,
                               padding: const EdgeInsets.symmetric(
                                   vertical: 25, horizontal: 20),
                               decoration: BoxDecoration(
@@ -595,7 +597,7 @@ class _HomeViewState extends State<HomeView> {
                                       "Others",
                                       style: TextStyle(
                                           color: TColor.black,
-                                          fontSize: 12,
+                                          fontSize: 14,
                                           fontWeight: FontWeight.w700),
                                     ),
                                     ShaderMask(
@@ -613,22 +615,24 @@ class _HomeViewState extends State<HomeView> {
                                         style: TextStyle(
                                             color: TColor.white.withOpacity(0.7),
                                             fontWeight: FontWeight.w700,
-                                            fontSize: 14),
+                                            fontSize: 16),
                                       ),
                                     ),
-                                    const SizedBox(height: 15,),
+                                    const SizedBox(height: 10,),
                                     RoundButtonBlack(
                                         title: "Workout Tracker",
                                         onPressed: () {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => const WorkoutTrackerView(),
+                                              //buat testing
+                                              // builder: (context) => const WorkoutTrackerView(),
+                                              builder: (context) => const ProfileView(),
                                             ),
                                           );
                                         }),
 
-                                    const SizedBox(height: 15,),
+                                    const SizedBox(height: 10,),
 
                                     RoundButtonBlack(
                                         title: "Meal Planner",
@@ -636,18 +640,18 @@ class _HomeViewState extends State<HomeView> {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => const LoginView(),
+                                              builder: (context) => const MealPlannerView(),
                                             ),
                                           );
                                         }),
                                   ]),
                             ),
                             SizedBox(
-                              height: media.width * 0.05,
+                              height: media.width * 0.025,
                             ),
                             Container(
                               width: double.maxFinite,
-                              height: media.width * 0.45,
+                              height: media.width * 0.60,
                               padding: const EdgeInsets.symmetric(
                                   vertical: 25, horizontal: 20),
                               decoration: BoxDecoration(
