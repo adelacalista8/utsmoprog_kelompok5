@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import '../../common/extension.dart';
 
-class OnBoadingView extends StatefulWidget {
-  const OnBoadingView({super.key});
+class OnBoardingView extends StatefulWidget {
+  const OnBoardingView({super.key});
 
   @override
-  State<OnBoadingView> createState() => _OnBoadingViewState();
+  State<OnBoardingView> createState() => _OnBoardingViewState();
 }
 
-class _OnBoadingViewState extends State<OnBoadingView> {
+class _OnBoardingViewState extends State<OnBoardingView> {
   int selectPage = 0;
   PageController controller = PageController();
 

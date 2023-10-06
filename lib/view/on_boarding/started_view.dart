@@ -1,6 +1,6 @@
 import 'package:UTS_Kelompok5/common/extension.dart';
 import 'package:UTS_Kelompok5/common_widget/round_button.dart';
-import 'package:UTS_Kelompok5/view/on_boarding/on_boarding_view.dart';
+import 'package:UTS_Kelompok5/view/on_boarding/fillerstart.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -36,6 +36,7 @@ class _StartedViewState extends State<StartedView> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Spacer(),
+                Image.asset('assets/img/lesbefitlogo.png'),
                 Text(
                   "LesBeFit",
                   style : TextStyle(
@@ -52,11 +53,11 @@ class _StartedViewState extends State<StartedView> {
                       fontWeight: FontWeight.w500),
                 ),
 
-                const Spacer(),
+                const Spacer(flex: 1),
 
                 SafeArea(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    padding: const EdgeInsets.only(left: 35,bottom:100, right: 35,),
                     child: RoundButton(
                       title : "Get Started",
                       type : isChangeColor ? RoundButtonType.bgGradient : RoundButtonType.textGradient,

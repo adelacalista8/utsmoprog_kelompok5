@@ -14,7 +14,7 @@ class OnBoardingPage extends StatelessWidget {
         height: media.height,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment:CrossAxisAlignment.center,
           children: [
             Image.asset(
               pObj["image"].toString(),
