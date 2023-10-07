@@ -16,19 +16,19 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
     {
       "time": "2 June",
       "photo": [
-        "assets/img/pp_1.png",
-        "assets/img/pp_2.png",
-        "assets/img/pp_3.png",
-        "assets/img/pp_4.png",
+        "assets/img/photo1.png",
+        "assets/img/photo2.png",
+        "assets/img/photo3.png",
+        "assets/img/photo4.png",
       ]
     },
     {
       "time": "5 May",
       "photo": [
-        "assets/img/pp_5.png",
-        "assets/img/pp_6.png",
-        "assets/img/pp_7.png",
-        "assets/img/pp_8.png",
+        "assets/img/photo5.png",
+        "assets/img/photo6.png",
+        "assets/img/photo1.png",
+        "assets/img/photo4.png",
       ]
     }
   ];
@@ -175,10 +175,10 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               const SizedBox(
-                                height: 15,
+                                height: 45,
                               ),
                               Text(
                                 "Track Your Progress Each\nMonth With Photo",
@@ -188,14 +188,15 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                 ),
                               ),
                               const Spacer(),
-                              SizedBox(
-                                width: 165,
-                                height: 35,
-                                child: RoundButton(
-                                    title: "Learn More",
-                                    // fontSize: 12,
-                                    onPressed: () {}),
-                              )
+
+                              // SizedBox(
+                              //   width: 165,
+                              //   height: 35,
+                              //   child: RoundButton(
+                              //       title: "Learn More",
+                              //       // fontSize: 12,
+                              //       onPressed: () {}),
+                              // )
                             ]),
                         Image.asset(
                           "assets/img/calendar.png",
@@ -261,12 +262,6 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                             fontSize: 16,
                             fontWeight: FontWeight.w700),
                       ),
-                      TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "See more",
-                            style: TextStyle(color: TColor.gray, fontSize: 12),
-                          ))
                     ],
                   ),
                 ),

@@ -1,5 +1,5 @@
 import 'package:UTS_Kelompok5/common_widget/tab_button.dart';
-import 'package:UTS_Kelompok5/view/home/home_view.dart';
+import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:UTS_Kelompok5/meal_planner/meal_planner_view.dart';
 import 'package:UTS_Kelompok5/view/login/profileprep.dart';
 import 'package:UTS_Kelompok5/view/login/login_view.dart';

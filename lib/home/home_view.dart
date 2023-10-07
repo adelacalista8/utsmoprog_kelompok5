@@ -10,7 +10,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
-import '../../../common/colo_extension.dart';
+import '../../common/colo_extension.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});

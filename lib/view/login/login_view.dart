@@ -1,7 +1,7 @@
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
 import 'package:UTS_Kelompok5/common_widget/round_orangebutton.dart';
 import 'package:UTS_Kelompok5/common_widget/round_textfield.dart';
-import 'package:UTS_Kelompok5/view/home/home_view.dart';
+import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:UTS_Kelompok5/view/login/profileprep.dart';
 import 'package:UTS_Kelompok5/view/login/signup_view.dart';
 import 'package:UTS_Kelompok5/view/on_boarding/started_view.dart';
