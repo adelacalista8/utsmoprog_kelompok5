@@ -1,5 +1,6 @@
 import 'package:UTS_Kelompok5/meal_planner/meal_planner_view.dart';
 import 'package:UTS_Kelompok5/view/login/login_view.dart';
+import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:UTS_Kelompok5/view/photo_progress/photo_progress_view.dart';
 import 'package:UTS_Kelompok5/view/profile/profile_view.dart';
 import 'package:UTS_Kelompok5/view/workout_tracker/workout_tracker_view.dart';
@@ -627,8 +628,7 @@ class _HomeViewState extends State<HomeView> {
                                             context,
                                             MaterialPageRoute(
                                               //buat testing
-                                              // builder: (context) => const WorkoutTrackerView(),
-                                              builder: (context) => const PhotoProgressView(),
+                                              builder: (context) => const WorkoutTrackerView(),
                                             ),
                                           );
                                         }),
