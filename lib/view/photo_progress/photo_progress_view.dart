@@ -1,4 +1,3 @@
-import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
 
@@ -172,10 +171,6 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                     padding: const EdgeInsets.all(20),
                     height: media.width * 0.4,
                     decoration: BoxDecoration(
-                        // gradient: LinearGradient(colors: [
-                        //   TColor.secondaryColor8orange.withOpacity(0.4),
-                        //   TColor.secondaryColor4brownish.withOpacity(0.4)
-                        // ]),
                         color : TColor.secondaryColor4brownish,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
@@ -232,8 +227,6 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                         child: RoundButtonTeal(
                           title: "Compare",
                           type: RoundButtonType.bgGradient,
-                          // fontSize: 12,
-                          // fontWeight: FontWeight.w400,
                           onPressed: () {
                             Navigator.push(
                               context,

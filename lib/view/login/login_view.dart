@@ -1,11 +1,8 @@
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
 import 'package:UTS_Kelompok5/common_widget/round_orangebutton.dart';
 import 'package:UTS_Kelompok5/common_widget/round_textfield.dart';
-import 'package:UTS_Kelompok5/home/home_view.dart';
-import 'package:UTS_Kelompok5/view/login/profileprep.dart';
 import 'package:UTS_Kelompok5/view/login/signup_view.dart';
 import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
-import 'package:UTS_Kelompok5/view/on_boarding/started_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
