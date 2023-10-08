@@ -232,7 +232,7 @@ class _HomeViewState extends State<HomeView> {
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(
-                        width: 70,
+                        width: 90,
                         height: 25,
                         child: RoundButton(
                           title: "Check",
@@ -244,7 +244,7 @@ class _HomeViewState extends State<HomeView> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                const LoginView(),
+                                const PhotoProgressView(),
                               ),
                             );
                           },

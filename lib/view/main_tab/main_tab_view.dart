@@ -1,12 +1,10 @@
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
 import 'package:UTS_Kelompok5/common_widget/tab_button.dart';
-import 'package:UTS_Kelompok5/view/home/blank_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:UTS_Kelompok5/home/home_view.dart';
 import '../photo_progress/photo_progress_view.dart';
 import '../profile/profile_view.dart';
-import '../workout_tracker/workout_tracker_view.dart';
 
 class MainTabView extends StatefulWidget {
   const MainTabView({super.key});

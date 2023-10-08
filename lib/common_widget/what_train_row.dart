@@ -67,7 +67,6 @@ class WhatTrainRow extends StatelessWidget {
                 width: 15,
               ),
               Stack(
-                alignment: Alignment.center,
                 children: [
                   Container(
                     width: 80,
@@ -81,8 +80,8 @@ class WhatTrainRow extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
                       wObj["image"].toString(),
-                      width: 140,
-                      height: 100,
+                      width: 60,
+                      height: 60,
                       fit: BoxFit.contain,
                     ),
                   ),

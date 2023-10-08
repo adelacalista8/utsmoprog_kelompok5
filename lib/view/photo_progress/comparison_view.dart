@@ -87,20 +87,7 @@ class _ComparisonViewState extends State<ComparisonView> {
                 onPressed: () {},
                 color: TColor.white.withOpacity(0.7)),
             const Spacer(),
-            // RoundButton(
-            //     title: "Compare",
-            //     onPressed: () {
-            //       Navigator.push(
-            //         context,
-            //         //blm bener
-            //         // MaterialPageRoute(
-            //         //   // builder: (context) => ResultView(
-            //         //     date1: DateTime(2023, 5, 1),
-            //         //     date2: DateTime(2023, 6, 1),
-            //         //   ),
-            //         ),
-            //       );
-            //     }),
+
             const SizedBox(
               height: 15,
             ),

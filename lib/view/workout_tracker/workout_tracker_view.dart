@@ -1,4 +1,5 @@
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
+import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:UTS_Kelompok5/view/workout_tracker/workout_detail_view.dart';
 import 'package:flutter/material.dart';
 
@@ -15,19 +16,19 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
 
   List whatArr = [
     {
-      "image": "assets/img/workout1.png",
+      "image": "assets/img/Workout1.png",
       "title": "Fullbody Workout",
       "exercises": "11 Exercises",
       "time": "32mins"
     },
     {
-      "image": "assets/img/workout2.png",
+      "image": "assets/img/Workout2.png",
       "title": "Lowerbody Workout",
       "exercises": "12 Exercises",
       "time": "40mins"
     },
     {
-      "image": "assets/img/workout3.png",
+      "image": "assets/img/Workout3.png",
       "title": "ABS Workout",
       "exercises": "14 Exercises",
       "time": "20mins"
@@ -49,9 +50,11 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
               elevation: 0,
               pinned: true,
               leading: InkWell(
-                onTap: () {
-                  Navigator.pop(context);
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) =>  MainTabView(  ) ));
                 },
+
+
                 child: Container(
                   margin: const EdgeInsets.all(8),
                   height: 40,

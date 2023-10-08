@@ -1,5 +1,6 @@
 import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:UTS_Kelompok5/meal_planner/breakfastlunch.dart';
+import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -59,7 +60,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomeView(
+                builder: (context) => MainTabView(
 
                 ),
               ),
@@ -168,33 +169,13 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                       width: double.maxFinite,
                       child: LineChart(
                         LineChartData(
-                          // showingTooltipIndicators:
-                          //     showingTooltipOnSpots.map((index) {
-                          //   return ShowingTooltipIndicators([
-                          //     LineBarSpot(
-                          //       tooltipsOnBar,
-                          //       lineBarsData.indexOf(tooltipsOnBar),
-                          //       tooltipsOnBar.spots[index],
-                          //     ),
-                          //   ]);
-                          // }).toList(),
+
                           lineTouchData: LineTouchData(
                             enabled: true,
                             handleBuiltInTouches: false,
                             touchCallback: (FlTouchEvent event,
                                 LineTouchResponse? response) {
-                              // if (response == null || response.lineBarSpots == null) {
-                              //   return;
-                              // }
-                              // if (event is FlTapUpEvent) {
-                              //   final spotIndex =
-                              //       response.lineBarSpots!.first.spotIndex;
-                              //   showingTooltipOnSpots.clear();
-                              //   setState(() {
-                              //     showingTooltipOnSpots.add(spotIndex);
-                              //   });
-                              // }
-                            },
+                              },
                             mouseCursorResolver: (FlTouchEvent event,
                                 LineTouchResponse? response) {
                               if (response == null ||
@@ -296,7 +277,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                               fontWeight: FontWeight.w700),
                         ),
                         SizedBox(
-                          width: 70,
+                          width: 90,
                           height: 25,
                           child: RoundButtonSmallOrange(
                             title: "Check",
@@ -308,7 +289,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) =>
-                                  const HomeView(),
+                                  const MainTabView(),
                                 ),
                               );
                             },

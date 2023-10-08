@@ -1,3 +1,4 @@
+import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
@@ -50,9 +51,10 @@ class _ProfileViewState extends State<ProfileView> {
                   color: TColor.white, fontSize: 16, fontWeight: FontWeight.w700),
             ),
           leading: InkWell(
-            onTap: () {
-              Navigator.pop(context);
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>  MainTabView(  ) ));
             },
+
             child: Container(
               margin: const EdgeInsets.all(8),
               height: 40,

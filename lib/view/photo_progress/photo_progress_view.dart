@@ -1,4 +1,5 @@
 import 'package:UTS_Kelompok5/home/home_view.dart';
+import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
@@ -52,9 +53,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                //buat testing
-                // builder: (context) => const WorkoutTrackerView(),
-                builder: (context) => const HomeView(),
+                builder: (context) => const MainTabView(),
               ),
             );
           },
@@ -197,19 +196,10 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                 ),
                               ),
                               const Spacer(),
-
-                              // SizedBox(
-                              //   width: 165,
-                              //   height: 35,
-                              //   child: RoundButton(
-                              //       title: "Learn More",
-                              //       // fontSize: 12,
-                              //       onPressed: () {}),
-                              // )
                             ]),
                         Image.asset(
                           "assets/img/calendar.png",
-                          width: media.width * 0.50,
+                          width: media.width * 0.35,
                         )
                       ],
                     ),
