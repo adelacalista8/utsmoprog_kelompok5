@@ -1,4 +1,3 @@
-import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:UTS_Kelompok5/meal_planner/breakfastlunch.dart';
 import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -8,8 +7,8 @@ import '../../common/colo_extension.dart';
 import 'package:UTS_Kelompok5/common_widget/find_eat_cell.dart';
 import 'package:UTS_Kelompok5/common_widget/round_buttonwhiteorange.dart';
 import 'package:UTS_Kelompok5/common_widget/today_meal_row.dart';
-/*import 'meal_food_details_view.dart';
-import 'meal_schedule_view.dart';*/
+
+
 
 class MealPlannerView extends StatefulWidget {
   const MealPlannerView({super.key});
