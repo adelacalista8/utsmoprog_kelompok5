@@ -224,8 +224,8 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                                     CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        height: media.width * 0.35,
-                                        width: media.width * 0.35,
+                                        height: media.width * 0.28,
+                                        width: media.width * 0.28,
                                         decoration: BoxDecoration(
                                             color: TColor.secondaryColor9bright,
                                             borderRadius:
@@ -251,9 +251,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                                   ));
                             }),
                       ),
-                      SizedBox(
-                        height: media.width * 0.05,
-                      ),
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

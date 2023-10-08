@@ -1,7 +1,8 @@
+import 'package:UTS_Kelompok5/home/home_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:UTS_Kelompok5/common/colo_extension.dart';
-import 'package:UTS_Kelompok5/common_widget/round_button.dart';
+import 'package:UTS_Kelompok5/common_widget/round_buttonteal.dart';
 import 'comparison_view.dart';
 
 class PhotoProgressView extends StatefulWidget {
@@ -48,7 +49,14 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
         ),
         leading: InkWell(
           onTap: () {
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                //buat testing
+                // builder: (context) => const WorkoutTrackerView(),
+                builder: (context) => const HomeView(),
+              ),
+            );
           },
           child: Container(
             margin: const EdgeInsets.all(8),
@@ -103,13 +111,13 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                     width: double.maxFinite,
                     padding: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
-                        color: const Color(0xffFFE5E5),
+                        color: Colors.grey,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                              color: TColor.white,
+                              color: Colors.orange[800],
                               borderRadius: BorderRadius.circular(30)),
                           width: 50,
                           height: 50,
@@ -169,7 +177,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                         //   TColor.secondaryColor8orange.withOpacity(0.4),
                         //   TColor.secondaryColor4brownish.withOpacity(0.4)
                         // ]),
-                        color : TColor.secondaryColor8orange,
+                        color : TColor.secondaryColor4brownish,
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -183,8 +191,9 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                               Text(
                                 "Track Your Progress Each\nMonth With Photo",
                                 style: TextStyle(
-                                  color: TColor.white,
+                                  color: TColor.black,
                                   fontSize: 12,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                               const Spacer(),
@@ -200,7 +209,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                             ]),
                         Image.asset(
                           "assets/img/calendar.png",
-                          width: media.width * 0.40,
+                          width: media.width * 0.50,
                         )
                       ],
                     ),
@@ -214,7 +223,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                   padding:
                   const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
                   decoration: BoxDecoration(
-                    color: TColor.white.withOpacity(0.8),
+                    color: Colors.grey,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Row(
@@ -230,7 +239,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                       SizedBox(
                         width: 140,
                         height: 25,
-                        child: RoundButton(
+                        child: RoundButtonTeal(
                           title: "Compare",
                           type: RoundButtonType.bgGradient,
                           // fontSize: 12,

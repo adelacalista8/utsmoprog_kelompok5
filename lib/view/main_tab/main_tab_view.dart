@@ -43,7 +43,10 @@ class _MainTabViewState extends State<MainTabView> {
                     color: Colors.black12,
                     blurRadius: 2,)
                 ]),
-            child: TabButton(
+            child:
+
+            TabButton(
+
                 icon: "assets/img/camera_tab.png",
                 selectIcon: "assets/img/camera_tab_select.png",
                 isActive: selectTab == 2,
@@ -55,8 +58,8 @@ class _MainTabViewState extends State<MainTabView> {
                   }
                 }),
           ),
-          ),
         ),
+      ),
       bottomNavigationBar: BottomAppBar(
           child: Container(
             decoration: BoxDecoration(color: TColor.white, boxShadow: const [

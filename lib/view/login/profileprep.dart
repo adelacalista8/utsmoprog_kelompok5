@@ -14,6 +14,8 @@ class CompleteProfileView extends StatefulWidget {
 
 class _CompleteProfileViewState extends State<CompleteProfileView> {
   TextEditingController txtDate = TextEditingController();
+  TextEditingController txtDate2 = TextEditingController();
+  TextEditingController txtDate3 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +118,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                         children: [
                           Expanded(
                             child: RoundTextField(
-                              controller: txtDate,
+                              controller: txtDate2,
                               hitText: "Your Weight",
                               icon: "assets/img/weight.png",
                             ),
@@ -149,7 +151,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                         children: [
                           Expanded(
                             child: RoundTextField(
-                              controller: txtDate,
+                              controller: txtDate3,
                               hitText: "Your Height",
                               icon: "assets/img/hight.png",
                             ),

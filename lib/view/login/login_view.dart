@@ -179,12 +179,12 @@ class _LoginViewState extends State<LoginView> {
                   height: media.width * 0.04,
                 ),
                 TextButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) =>
-                              const SignUpView()));
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                            const SignUpView()));
                   },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
