@@ -13,19 +13,6 @@ class WorkoutDetailView extends StatefulWidget {
 }
 
 class _WorkoutDetailViewState extends State<WorkoutDetailView> {
-  //gausah
-  // List latestArr = [
-  //   {
-  //     "image": "assets/img/Workout1.png",
-  //     "title": "Fullbody Workout",
-  //     "time": "Today, 03:00pm"
-  //   },
-  //   {
-  //     "image": "assets/img/Workout2.png",
-  //     "title": "Upperbody Workout",
-  //     "time": "June 05, 02:00pm"
-  //   },
-  // ];
 
   List youArr = [
     {"image": "assets/img/dumbbell.png", "title": "Barbell"},

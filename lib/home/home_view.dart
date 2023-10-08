@@ -1,8 +1,6 @@
 import 'package:UTS_Kelompok5/meal_planner/meal_planner_view.dart';
 import 'package:UTS_Kelompok5/view/login/login_view.dart';
-import 'package:UTS_Kelompok5/view/main_tab/main_tab_view.dart';
 import 'package:UTS_Kelompok5/view/photo_progress/photo_progress_view.dart';
-import 'package:UTS_Kelompok5/view/profile/profile_view.dart';
 import 'package:UTS_Kelompok5/view/workout_tracker/workout_tracker_view.dart';
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:UTS_Kelompok5/common_widget/round_blackbutton.dart';

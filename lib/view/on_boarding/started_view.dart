@@ -1,7 +1,6 @@
 import 'package:UTS_Kelompok5/common/extension.dart';
 import 'package:UTS_Kelompok5/common_widget/round_button.dart';
 import 'package:UTS_Kelompok5/view/on_boarding/fillerstart.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class StartedView extends StatefulWidget {
@@ -23,10 +22,6 @@ class _StartedViewState extends State<StartedView> {
       body: Container(
         width: media.width,
         decoration: BoxDecoration(
-          // gradient: LinearGradient(
-          //     colors:TColor.primaryG1,
-          //     begin : Alignment.topLeft,
-          //     end: Alignment.bottomRight)
           color:TColor.black,
 
         ),

@@ -31,7 +31,6 @@ class _SignUpViewState extends State<SignUpView> {
                     width: 190,
                     height: 200,
                     fit:BoxFit.fill
-
                 ),
                 Text(
                   "Hey there,",
